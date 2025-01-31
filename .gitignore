@@ -1,0 +1,6 @@
+.zig-cache/*
+.*.swp
+*.core
+*.bin
+zig-out/*
+
