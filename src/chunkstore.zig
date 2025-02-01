@@ -77,6 +77,10 @@ pub const ChunkStore = struct {
         self.chunks = newchunks;
     }
 
+    pub fn size(self: *Self) usize {
+        return self.array.pointers.len;
+    }
+
     pub fn Allocator(self: *Self) *std.mem.Allocator {
         return self.allocator;
     }
